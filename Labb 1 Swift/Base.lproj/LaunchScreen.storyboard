@@ -15,17 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOWERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1v-pI-HNL">
-                                <rect key="frame" x="126.5" y="427.5" width="161.5" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CKl-Yb-743">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4gG-8L-2cF"/>
+                                    <constraint firstAttribute="height" constant="240" id="EJd-nk-PcX"/>
+                                    <constraint firstAttribute="width" secondItem="CKl-Yb-743" secondAttribute="height" multiplier="1:1" id="yKt-5B-wSP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G1v-pI-HNL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9wT-bo-iWY"/>
-                            <constraint firstItem="G1v-pI-HNL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cTC-CW-nAt"/>
+                            <constraint firstItem="CKl-Yb-743" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZVX-YW-sw4"/>
+                            <constraint firstItem="CKl-Yb-743" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rTU-I2-WIb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="1024" height="1024"/>
+    </resources>
 </document>
